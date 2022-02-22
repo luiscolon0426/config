@@ -91,6 +91,30 @@ fi
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
+alias lt='ls --human-readable --size -l -S --classify'
+
+#chmod alias
+alias mk='chmod u+x'
+
+#subsitute for cat
+alias bat='batcat'
+
+#EZ bashrc
+alias bashrc='nvim ~/.bashrc'
+
+
+
+# Python aliases
+alias pr='python3'
+alias pcs='pycodestyle'
+
+# sudo alias
+alias pls='sudo'
+
+#git aliases
+alias ga='git add'
+alias gc='git commit -m'
+alias gp='git push'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -128,3 +152,4 @@ git_branch() {
 }
 export PS1="\[\033[22;35m\](\T) ${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\e\033[00m\]:\[\e\033[01;34m\]\W\[\e\033[00m\]\$(git_branch)\[\e\033[00m\]\n  ⟾  "
 
+set -o vi
