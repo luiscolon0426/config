@@ -13,8 +13,7 @@ ln -f init.vim ~/.config/nvim/init.vim
 echo linked the .vimrc
 
 # Install vim plug
-sh -c 'curl -fLo "~/.config/nvim/site/autoload/plug.vim --create-dirs \
-       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+curl https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim > ~/.config/nvim/autoload/plug.vim
 
 touch ~/.gitconfig
 ln -f .gitconfig ~/.gitconfig
